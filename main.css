@@ -72,7 +72,7 @@ header {
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* header::before {
+header::before {
   content: "";
   background-image: url(https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000);
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@ header {
   opacity: 0.4;
   position: absolute;
   inset: 0;
-} */
+}
 header h1 {
   font-size: 1.6rem;
   margin: 0;
