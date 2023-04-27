@@ -240,13 +240,19 @@ header {
       // scroll-behavior: smooth;
     }
   }
-  &.popular,
   &.breakfast,
   &.lunch,
   &.dinner {
     & h2 {
       margin-inline: 3rem;
       text-align: left;
+    }
+
+    @media (max-width: 35rem) {
+      & h2 {
+        // margin-inline: 3rem;
+        text-align: center;
+      }
     }
   }
 }
@@ -345,4 +351,45 @@ footer {
   text-align: center;
   padding-block: 1.5rem;
   margin: 0;
+}
+
+.display-none {
+  @media (max-width: 35rem) {
+    display: none;
+  }
+}
+
+.about-main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & .body-text {
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  & p {
+    padding-block: 1rem;
+  }
+
+  & h2 {
+    font-size: 2rem;
+
+    color: white;
+    padding-top: 1rem;
+  }
+  & footer {
+    justify-content: flex-end;
+  }
+  @media (min-width: 45rem) {
+    & .body-text {
+      max-width: 50%;
+    }
+  }
 }
