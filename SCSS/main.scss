@@ -4,9 +4,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  & * {
-    // outline: 1px solid red;
-  }
 }
 
 .fried-chicken {
@@ -22,7 +19,6 @@ body {
     margin-inline: 2rem;
     max-width: fit-content;
     padding: 0;
-    // outline: 2px solid lime;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +26,6 @@ body {
     & .btns {
       margin-inline: -1rem;
 
-      // font-size: 1.6rem;
       color: #000;
       cursor: pointer;
       position: absolute;
@@ -42,7 +37,6 @@ body {
         all: unset;
         width: 2.5rem;
         text-align: center;
-        // align-items: center;
         opacity: 0.5;
         height: 2.5rem;
         background-color: white;
@@ -56,8 +50,6 @@ body {
   }
 
   & img {
-    // outline: solid red 1px;
-    // position: relative;
     max-width: 100%;
     width: 40rem;
     aspect-ratio: 1;
@@ -113,7 +105,6 @@ main {
 
 header {
   position: relative;
-  // outline: 1px solid lime;
   height: 2rem;
   position: relative;
   padding: 20px;
@@ -139,11 +130,6 @@ header {
     width: 100%;
     display: block;
     justify-content: space-between;
-    // background-color: red;
-  }
-
-  @media (min-width: 45rem) {
-    // background-color: blue;
   }
 }
 
@@ -269,33 +255,6 @@ header {
     position: relative;
     padding-bottom: 1.2rem;
     padding-top: 1.5rem;
-
-    // &-container {
-    //   overflow-x: scroll;
-    //   overflow-x: auto;
-    //   @media (min-width: 35rem) {
-    //     display: flex;
-    //     width: 100%;
-    //     // scroll-behavior: smooth;
-    //   }
-    // }
-
-    // ! text centering
-    // &.breakfast,
-    // &.lunch,
-    // &.dinner {
-    //   & h2 {
-    //     margin-inline: 3rem;
-    //     text-align: left;
-    //   }
-
-    //   @media (max-width: 35rem) {
-    //     & h2 {
-    //       // margin-inline: 3rem;
-    //       text-align: center;
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -303,7 +262,6 @@ header {
   min-width: 10rem;
   background-color: rgb(242, 254, 254);
   z-index: 999;
-  // max-width: 100%;
   border: 1px solid #ccc;
   border-radius: 20px;
   margin-bottom: 1.5rem;
@@ -404,10 +362,6 @@ footer {
 .about-main {
   min-height: 90vh;
 
-  // *{
-  //   outline: 1px solid red;
-  // }
-
   h2 {
     padding-top: 5rem;
   }
@@ -419,10 +373,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    // justify-content: center;
     gap: 2rem;
     padding-inline: 2rem;
-    // width: 80%;
 
     @media (min-width: 45rem) {
       grid-template-columns: repeat(2, 1fr);
@@ -488,7 +440,6 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    // background-color: #f2f2f2;
     padding: 1rem;
     text-align: center;
   }
