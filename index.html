@@ -53,10 +53,10 @@
         <li><a href="/about.html">About</a></li>
       </ul>
     </nav>
-    <main>
+    <main class="index-main">
       <section class="featured-recipes">
         <h2>Featured Recipes</h2>
-        <div class="featured-recipes-container">
+        <div class="recipes-container">
           <div class="recipe">
             <img
               src="https://source.unsplash.com/640x480/?fried+chicken"
@@ -107,178 +107,284 @@
             <a href="#">View Recipe</a>
           </div>
         </div>
-        <!-- Repeat this recipe card as many times as needed -->
       </section>
-      <section class="featured-recipes breakfast">
-        <h2>Breakfast</h2>
-        <div class="featured-recipes-container">
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              This Recipe Name recipe yields crispy, golden-brown chicken with
-              juicy meat and a flavorful coating.
-            </p>
-            <a href="/friedChicken.html">View Recipe</a>
-          </div>
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
-          </div>
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
-          </div>
-          <!-- recipe card -->
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
-          </div>
+      <!--=====Tabs=====-->
+      <div class="tab-contents">
+        <div class="ul-container">
+          <ul>
+            <li>
+              <button data-target="#breakfast" class="btn_active">
+                Breakfast
+              </button>
+            </li>
+            <li>
+              <button data-target="#lunch">Lunch</button>
+            </li>
+            <li>
+              <button data-target="#dinner">Dinner</button>
+            </li>
+          </ul>
         </div>
-        <!-- Repeat this recipe card as many times as needed -->
-      </section>
-      <section class="featured-recipes lunch">
-        <h2>Lunch</h2>
-        <div class="featured-recipes-container">
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              This Recipe Name recipe yields crispy, golden-brown chicken with
-              juicy meat and a flavorful coating.
-            </p>
-            <a href="/friedChicken.html">View Recipe</a>
+        <section data-content id="breakfast" class="breakfast sec_active">
+          <h2>Breakfast</h2>
+          <div class="recipes-container">
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
+            <!-- recipe card -->
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
           </div>
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
+        </section>
+        <section data-content id="lunch" class="lunch">
+          <h2>Lunch</h2>
+          <div class="recipes-container">
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
+            <!-- recipe card -->
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
           </div>
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
+        </section>
+        <section data-content id="dinner" class="dinner">
+          <h2>Dinner</h2>
+          <div class="recipes-container">
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                This Recipe Name recipe yields crispy, golden-brown chicken with
+                juicy meat and a flavorful coating.
+              </p>
+              <a href="/friedChicken.html">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
+            <!-- recipe card -->
+            <div class="recipe">
+              <img
+                src="https://source.unsplash.com/640x480/?food"
+                alt="Recipe Image"
+              />
+              <h3>Recipe Name</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                libero eu purus auctor scelerisque.
+              </p>
+              <a href="#">View Recipe</a>
+            </div>
           </div>
-          <!-- recipe card -->
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
-          </div>
-        </div>
-        <!-- Repeat this recipe card as many times as needed -->
-      </section>
-      <section class="featured-recipes dinner">
-        <h2>Dinner</h2>
-        <div class="featured-recipes-container">
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              This Recipe Name recipe yields crispy, golden-brown chicken with
-              juicy meat and a flavorful coating.
-            </p>
-            <a href="/friedChicken.html">View Recipe</a>
-          </div>
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
-          </div>
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
-          </div>
-          <!-- recipe card -->
-          <div class="recipe">
-            <img
-              src="https://source.unsplash.com/640x480/?food"
-              alt="Recipe Image"
-            />
-            <h3>Recipe Name</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-              libero eu purus auctor scelerisque.
-            </p>
-            <a href="#">View Recipe</a>
-          </div>
-        </div>
-        <!-- Repeat this recipe card as many times as needed -->
-      </section>
+        </section>
+      </div>
     </main>
     <footer>
       <p>&copy; My Recipe Website 2023</p>
     </footer>
 
     <script src="/assets/index.js"></script>
+    <script>
+      const tabs = document.querySelectorAll("[data-target]")
+      const tabContents = document.querySelectorAll("[data-content]")
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = document.querySelector(tab.dataset.target)
+
+          tabContents.forEach((tc) => {
+            tc.classList.remove("sec_active")
+          })
+          target.classList.add("sec_active")
+
+          tabs.forEach((t) => {
+            t.classList.remove("btn_active")
+          })
+          tab.classList.add("btn_active")
+        })
+      })
+    </script>
   </body>
 </html>

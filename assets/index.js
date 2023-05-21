@@ -1,3 +1,5 @@
+// ! Menu
+
 const nav = document.querySelector(".primary-navigation")
 const navToggle = document.querySelector(".mobile-nav-toggle")
 
@@ -13,7 +15,8 @@ navToggle.addEventListener("click", () => {
   }
 })
 
-// slider
+// ! slider/friedc-hicken
+
 let imageArray = [
   "/assets/Images/fried-chicken.jpg",
   "/assets/Images/fried-chicken2.jpg",
@@ -41,3 +44,5 @@ function updateImageDisplay() {
   const currentImageURL = imageArray[currentIndex]
   currentImage.src = currentImageURL
 }
+
+// more js  in the index.html and about.html pages

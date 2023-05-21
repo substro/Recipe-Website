@@ -49,37 +49,65 @@
     </nav>
     <main class="about-main">
       <h2>About Us</h2>
-      <div class="body-text">
-        <p>
-          Welcome to Recipes Website, your go-to source for delicious and
-          easy-to-follow recipes. Our website was created as a project for a web
-          development class, with the aim of providing a simple and
-          user-friendly platform for anyone looking to try out new recipes.
-        </p>
-        <p>
-          Our team of experienced cooks and food enthusiasts are constantly
-          testing and developing new recipes to add to our collection, which
-          spans a wide range of cuisines and dietary needs. From quick and easy
-          weeknight dinners to show-stopping desserts, we have something for
-          everyone.
-        </p>
-        <p>
-          At [Website Name], we believe that cooking should be fun and
-          accessible for everyone, regardless of their skill level. That's why
-          all of our recipes come with step-by-step instructions and photos to
-          guide you through the cooking process.
-        </p>
-        <p>
-          We hope you enjoy using our website and trying out our recipes. If you
-          have any feedback or suggestions, please don't hesitate to contact us.
-          Happy cooking!
-        </p>
+      <div class="about-container">
+        <div class="body-text">
+          <p>
+            Welcome to Recipes Website, your go-to source for delicious and
+            easy-to-follow recipes. Our website was created as a project for a
+            web development class, with the aim of providing a simple and
+            user-friendly platform for anyone looking to try out new recipes.
+          </p>
+          <p>
+            Our team of experienced cooks and food enthusiasts are constantly
+            testing and developing new recipes to add to our collection, which
+            spans a wide range of cuisines and dietary needs. From quick and
+            easy weeknight dinners to show-stopping desserts, we have something
+            for everyone.
+          </p>
+          <p>
+            At [Website Name], we believe that cooking should be fun and
+            accessible for everyone, regardless of their skill level. That's why
+            all of our recipes come with step-by-step instructions and photos to
+            guide you through the cooking process.
+          </p>
+          <p>
+            We hope you enjoy using our website and trying out our recipes. If
+            you have any feedback or suggestions, please don't hesitate to
+            contact us. Happy cooking!
+          </p>
+        </div>
+        <div class="newsletter-section">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form id="newsletter-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <button id="btnnn" type="submit">Subscribe</button>
+            <p id="success-message"></p>
+          </form>
+        </div>
       </div>
+
       <footer>
         <p>&copy; My Recipe Website 2023</p>
       </footer>
     </main>
 
-    <script src="/assets/index.js"></script>
+    <script src="assets/index.js"></script>
+    <script>
+      const form = document.querySelector("#newsletter-form")
+      const successMessage = document.querySelector("#success-message")
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault()
+
+        showSuccessMessage()
+      })
+
+      function showSuccessMessage() {
+        successMessage.textContent = "Subscription successful!"
+      }
+    </script>
   </body>
 </html>
