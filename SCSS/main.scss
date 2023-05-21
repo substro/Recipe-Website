@@ -17,6 +17,7 @@ body {
   }
 
   & .image {
+    position: relative;
     margin-inline: 2rem;
     max-width: fit-content;
     padding: 0;
@@ -24,6 +25,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+    & .btns{
+      margin-inline: -1rem;
+
+      // font-size: 1.6rem;
+      color: #000;
+      cursor: pointer;
+      position: absolute;
+      inset: 50% 0;
+      display: flex;
+      justify-content: space-between;
+
+      & button{
+        all: unset;
+        width:2.5rem;
+        text-align: center;
+        // align-items: center;
+        opacity: .5;
+        height: 2.5rem;
+        background-color: white;
+        border-radius: 50%;
+        transition: opacity ease-in-out 300ms;
+        &:hover{
+          opacity: 1;
+        }
+      }
+
+    }
   }
 
   & img {
