@@ -15,7 +15,7 @@ navToggle.addEventListener("click", () => {
   }
 })
 
-// ! slider/friedc-hicken
+// ! slider/friedchicken
 
 let imageArray = [
   "/assets/Images/fried-chicken.jpg",
