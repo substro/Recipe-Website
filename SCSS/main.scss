@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  min-width:fit-content;
+  min-width: fit-content;
 }
 
 .fried-chicken {
@@ -128,7 +128,6 @@ header {
   }
 
   @media screen and (min-width: 35rem) {
-    width: 100%;
     display: block;
     justify-content: space-between;
   }
